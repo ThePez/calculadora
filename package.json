@@ -1,0 +1,29 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "calculadora basica",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp",
+    "compilar_todo_sass": "gulp compilar_todo_sass",
+    "compilar_sass": "gulp sass",
+    "actualizar_sass": "gulp actualizar_sass",
+    "compilar_todo_js": "gulp compilar_todo_js",
+    "compilar_js": "gulp js",
+    "actualizar_js": "gulp actualizar_js"
+  },
+  "author": "@ThePez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
+}

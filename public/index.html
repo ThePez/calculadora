@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+</head>
+
+<body class="container-fluid">
+
+    <header class="col-2 bg-dark text-right text-white">
+        <div class="pantalla bg-secondary">
+            <p id="p_secundaria" class="bg-secondary">0</p>
+            <p id="p_principal" class="bg-secondary">0</p>
+        </div>
+    </header>
+
+    <main class="col-2 bg-secondary">
+        <div class="row">
+            <div class="col-3">
+                <button id="b_borrar" class="btn btn-dark" onclick="Operacion('<-')">←</button id="b_limpiar">
+            </div>
+            <div class="col-3">
+                <button id="b_limpiar" class="btn btn-dark" onclick="Operacion('CE')">CE</button id="b_limpiar">
+            </div>
+            <div class="col-6">
+                <button id="b_resultado" class="btn btn-dark" onclick="Operacion('=')">=</button id="b_resultado">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button id="b_7" class="btn btn-dark" onclick="P_principal(7)">7</button id="b_7">
+            </div>
+            <div class="col-3">
+                <button id="b_8" class="btn btn-dark" onclick="P_principal(8)">8</button id="b_8">
+            </div>
+            <div class="col-3">
+                <button id="b_9" class="btn btn-dark" onclick="P_principal(9)">9</button>
+            </div>
+            <div class="col-3">
+                <button id="b_dividir" class="btn btn-dark" onclick="Operacion('/')">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button id="b_4" class="btn btn-dark" onclick="P_principal(4)">4</button id="b_4">
+            </div>
+            <div class="col-3">
+                <button id="b_5" class="btn btn-dark" onclick="P_principal(5)">5</button>
+            </div>
+            <div class="col-3">
+                <button id="b_6" class="btn btn-dark" onclick="P_principal(6)">6</button id="b_6">
+            </div>
+            <div class="col-3">
+                <button id="b_multiplicar" class="btn btn-dark" onclick="Operacion('*')">*</button id="b_multiplicar">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button id="b_1" class="btn btn-dark" onclick="P_principal(1)">1</button id="b_1">
+            </div>
+            <div class="col-3">
+                <button id="b_2" class="btn btn-dark" onclick="P_principal(2)">2</button>
+            </div>
+            <div class="col-3">
+                <button id="b_3" class="btn btn-dark" onclick="P_principal(3)">3</button id="b_3">
+            </div>
+            <div class="col-3">
+                <button id="b_restar" class="btn btn-dark" onclick="Operacion('-')">-</button id="b_restar">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button id="b_0" class="btn btn-dark" onclick="P_principal(0)">0</button id="b_0">
+            </div>
+            <div class="col-3">
+                <button id="b_coma" class="btn btn-dark" onclick="P_principal(',')">,</button>
+            </div>
+            <div class="col-3">
+                <button id="b_sumar" class="btn btn-dark" onclick="Operacion('+')">+</button>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
